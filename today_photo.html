@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wildlife Photography</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <style>
+        
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-log-in"></span>Sign In</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default button1" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+               <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="form-inline"><!--form-horizontal-->
+                            <p class="p">Sign Up to continue</p>
+                                <input type="text" class="form-control input1" id="fname" placeholder="First Name"><br>
+                                <input type="text" class="form-control input1" id="lname" placeholder="Last Name"><br>
+                                <input type="email" class="form-control input1" id="email" placeholder="Email Address"><br>
+                                <input type="password" class="form-control input1" id="pwd" placeholder="Password">
+                                <br>
+                                <button type="submit" class="btn btn-default button2">Sign Up</button><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="form-inline"><!--form-horizontal-->
+                            <p class="p">Sign in to continue</p>
+                                <input type="email" class="form-control input1" id="email" placeholder="Email Address"><br>
+                                <input type="password" class="form-control input1" id="pwd" placeholder="Password">
+                                <br><input type="checkbox"><span class="la">Stay signed in</span><br>
+                            <button type="submit" class="btn btn-default button2">Sign In</button><br>
+                            <a class="a">Forgot Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-footer">
+                        <div style="text-align:left; padding:35px" class="col-md-6">
+                            <p style="font-size:20px;color:black">Firstname Lastname</p>
+                            <p>Country : Bangladesh<br>
+                                Age: 19;<br>
+                                Occupation: Student;<br>
+                                Ranking Point: 4.90<br>
+                                Uploaded on: 28 September 2018
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail">
+                                <img src="images/person.png" alt="Lion" style="width:300px;height:200px">
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="band" class="container text-center mb">
+        <h3>Wildlife Photography Ranking</h3>
+        <p class="p2"><em>Today's Best Photography</em></p>
+        <div class="row text-center">
+            <div class="m">
+                <div class="img-thumbnail">
+                    <a href="images/image_1.jpg" target="">
+                        <img src="images/image_1.jpg" alt="Lion" style="width:100%;height:300px">
+                    </a>
+                    <div style="padding: 10px">
+                        <p> <strong>" Lion "</strong></p>
+                        <p>Ranking Point:4.76</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal3">View Photographers Details</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer class="text-center">
+        <p>This Theme Made By 7 Brother 1 Sister.</p>
+    </footer>
+</body>
+</html>

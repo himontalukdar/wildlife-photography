@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wildlife Photography</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <style>
+        
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container con">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#myPage">Home</a></li>
+                    <li><a href="#band">About Us</a></li>
+                    <li><a href="#tour">Photos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ranking Photos
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="today_photo.html" target="_blank">Today's Photo</a></li>
+                            <li><a href="week_photo.html" target="_blank">Last 7 day's photos</a></li>
+                            <li><a href="month_photo.html" target="_blank">Last 15 day's Photos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-log-in"></span>Sign In</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default button1" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+               <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="form-inline"><!--form-horizontal-->
+                            <p class="p">Sign Up to continue</p>
+                                <input type="text" class="form-control input1" id="fname" placeholder="First Name"><br>
+                                <input type="text" class="form-control input1" id="lname" placeholder="Last Name"><br>
+                                <input type="email" class="form-control input1" id="email" placeholder="Email Address"><br>
+                                <input type="password" class="form-control input1" id="pwd" placeholder="Password">
+                                <br>
+                                <button type="submit" class="btn btn-default button2">Sign Up</button><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="form-inline"><!--form-horizontal-->
+                            <p class="p">Sign in to continue</p>
+                                <input type="email" class="form-control input1" id="email" placeholder="Email Address"><br>
+                                <input type="password" class="form-control input1" id="pwd" placeholder="Password">
+                                <br><input type="checkbox"><span class="la">Stay signed in</span><br>
+                            <button type="submit" class="btn btn-default button2">Sign In</button><br>
+                            <a class="a">Forgot Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/image_2.png" alt="image" style="width:100%;height: 680px;"> 
+                <div class="carousel-caption">
+                    <h3>Animals</h3>
+                    <p>The atmosphere in New York.</p>
+                </div>  
+            </div>
+            <div class="item">
+                <img src="images/image_4.jpg" alt="image" style="width:100%;height: 680px;">  
+                <div class="carousel-caption">
+                    <h3>BIRDS</h3>
+                    <p>Thank you, Chicago - A night we won't forget.</p>
+                </div> 
+            </div>
+            <div class="item">
+                <img src="images/image_24.jpg" alt="image" style="width:100%;height: 680px;"> 
+                <div class="carousel-caption">
+                    <h3>Animals</h3>
+                    <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p> 
+                </div> 
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Prev</span>
+        </a>
+        <a class="right carousel-control" href="#carousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Prev</span>
+        </a>
+    </div>
+
+ <!-- Container (The Band Section) -->
+    <div id="band" class="container text-center mb">
+        <h3 style="padding-top:60px">Wildlife Photography</h3>
+        <p>It is a platform to upload Wildlife Photograps. Upload Your Exclusive Photos and get rankings from others.<br> Get Recognization from worldwide through your Photo. </p><br>
+        <div class="row">
+            <div style="margin-bottom:30px" class="col-sm-4">
+                <p class="text-center"><strong>BIRD</strong></p><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="images/image_8.jpg" class="img-circle person" alt="Random Name" style="width:280px; height:260px;">
+                </a>
+                <div id="demo" class="collapse">
+                    <p>Bird</p>
+                    <p>Ranking Point: 4.5</p>
+                    <p>Uploaded on 26 April 2018</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Tiger</strong></p><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="images/image_23.jpg" class="img-circle person" alt="Random Name" style="width:280px; height:260px;">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p>Tiger</p>
+                    <p>Ranking Point: 4.35</p>
+                    <p>Uploaded on 2 May 2018</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Tenda</strong></p><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="images/image_12.jpg" class="img-circle person" alt="Random Name" style="width:280px; height:260px;">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>Tenda</p>
+                    <p>Ranking Point: 4.45</p>
+                    <p>Uploaded on 25 April 2018</p>
+                </div>
+            </div>
+        </div>
+        <div  style="padding-bottom:40px;" class="row">
+            <div class="container">
+                <div id="mySidenav" class="sidenav">
+                    <a href="#" id="google">Goolge+</a>
+                    <a href="#" id="fb">Facebook</a>
+                    <a href="#" id="twitter">Twiter</a>
+                    <a href="#" id="utube">You Tube</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Lion</strong></p><br>
+                <a href="#demo4" data-toggle="collapse">
+                    <img src="images/image_10.jpg" class="img-circle person" alt="Random Name" style="width:280px; height:260px;">
+                </a>
+                <div id="demo4" class="collapse">
+                    <p>Lion</p>
+                    <p>Ranking Point: 4.56</p>
+                    <p>Uploaded on 7 May 2018</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Frog</strong></p><br>
+                <a href="#demo5" data-toggle="collapse">
+                    <img src="images/image_17.jpg" class="img-circle person" alt="Random Name" style="width:280px; height:260px;">
+                </a>
+                <div id="demo5" class="collapse">
+                    <p>Frog</p>
+                    <p>Ranking Point: 4.54</p>
+                    <p>Uploaded on 6 April 2018</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Snake</strong></p><br>
+                <a href="#demo6" data-toggle="collapse">
+                    <img src="images/image_26.jpg" class="img-circle person" alt="Random Name" style="width:280px; height:260px;">
+                </a>
+                <div id="demo6" class="collapse">
+                    <p>Snake</p>
+                    <p>Ranking Point: 4.35</p>
+                    <p>Uploaded on 8 April 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+    <div class="container">
+        <h3 style="padding-top:80px" class="text-center">Uploaded photos</h3>
+        <p class="text-center">Anyone can Buy photos from here. Photographers can sell photoes and earn from here...</p>
+        <ul class="list-group">
+            <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+            <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+            <li class="list-group-item">November <span class="badge">3</span></li>
+        </ul>
+
+        <div style="padding: 20px 0px 80px 0px;" class="row text-center">
+            <div class="col-sm-4">
+                <div class="img-thumbnail">
+                    <a href="images/iamge_5.jpg" target="">
+                        <img src="images/iamge_5.jpg" alt="Lion" style="width:100%;height:250px">
+                    </a>
+                    <div style="padding: 10px; color:black">
+                        <p><strong> Deer </strong></p>
+                        <p>Ranking Point:4.96</p>
+                        <p>Price: 496$</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal4">Buy This Photo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="img-thumbnail">
+                    <a href="images/image_17.jpg" target="">
+                        <img src="images/image_17.jpg" alt="Lion" style="width:100%;height:250px">
+                    </a>
+                    <div style="padding: 10px; color:black">
+                        <p><strong> Frog </strong></p>
+                        <p>Ranking Point:4.96</p>
+                        <p>Price: 596$</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal4">Buy This Photo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="img-thumbnail">
+                    <a href="images/image_1.jpg" target="">
+                        <img src="images/image_1.jpg" alt="Lion" style="width:100%;height:250px">
+                    </a>
+                    <div style="padding: 10px; color:black">
+                        <p><strong> Lion </strong></p>
+                        <p>Ranking Point:4.96</p>
+                        <p>Price: 506$</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal4">Buy This Photo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-bottom:40px!important" class="container">
+        <h3 class="text-center">Top Selling Photos</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Today</a></li>
+            <li><a data-toggle="tab" href="#menu1">Yesterday</a></li>
+            <li><a data-toggle="tab" href="#menu2">Previous Day</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h2>Tiger, 270$</h2>
+                <p>Photofraphers Name</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h2>Lion, 770$</h2>
+                <p>Photofraphers Name</p>
+                <h2>Frog, 710$</h2>
+                <p>Photofraphers Name</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h2>Monkey, 370$</h2>
+                <p>Photofraphers Name</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4><span class="glyphicon glyphicon-shopping-cart"></span>Buy This Photo </h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label >Enter Your Name </label>
+                            <input type="text" class="form-control input1" id="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label></span>Enter You Email</label>
+                            <input type="email" class="form-control input1" id="email" placeholder="Enter email Address">
+                        </div>
+                        <div class="form-group">
+                            <label></span>Select the options to pay the money</label>
+                            <select>
+                            <option>
+                                By Cash
+                            </option>
+                            <option>
+                                By Card
+                            </option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn button2">Pay
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container" style="background-color: white;">
+    <h3 style="padding-top:60px" class="text-center">Contact</h3>
+    <p class="text-center"><em>If you have any Questions, send us a message.</em></p>
+
+    <div style="padding-top:30px;" class="row">
+        <div class="col-md-4">
+            <p><span class="glyphicon glyphicon-map-marker"> </span> Dhaka, Bangladesh</p>
+            <p><span class="glyphicon glyphicon-phone"> </span> Phone: +880 1515151515</p>
+            <p><span class="glyphicon glyphicon-envelope"> </span> Email: mail@mail.com</p>
+        </div>
+        <div style="padding-top:30px;" class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>&copy; This Theme Made By Himon Talukdar.</p>
+</footer>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+    }
+</script>
+
+<script>
+    $(document).ready(function(){
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+</script>
+
+</body>
+</html>
